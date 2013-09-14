@@ -36,3 +36,4 @@ nosetests.xml
 
 .sublime-workspace
 access_token.txt
+config.mine.py

@@ -1,9 +1,9 @@
-BROKER_URL = "redis://steven-hp"
+BROKER_URL = "redis://[redis host name]"
 CELERY_ANNOTATIONS = {"*": {"rate_limit": "100/h"}}
-CELERY_RESULT_BACKEND = "redis://steven-hp"
-APP_KEY = '4078316991'
-APP_SECRET = '47759b442ff801eee661f12e6eede529'
-CALLBACK_URL = 'http://py.chooeki.com/weibo'
-WEIBO_ACCOUNT = 'send4724@gmail.com'
-WEIBO_PASSWORD = 'daemon'
-MONGO_SERVER = 'steven-hp'
+CELERY_RESULT_BACKEND = "redis://[celery backend]"
+APP_KEY = 'Sina weibo API KEY'
+APP_SECRET = 'Sina weibo APP SECRET'
+CALLBACK_URL = 'http://[Sina callback url]'
+WEIBO_ACCOUNT = 'youraccount email'
+WEIBO_PASSWORD = 'your password'
+MONGO_SERVER = 'mongo db server'
