@@ -48,7 +48,7 @@ def get_client(config):
 	
 	token = get_access_token()
 	if token is None:
-		code = login_wb(client, config.WEIBO_ACCOUNT, WEIBO_ACCOUNT.WEIBO_PASSWORD)
+		code = login_wb(client, config.WEIBO_ACCOUNT, config.WEIBO_PASSWORD)
 		token = client.request_access_token(code)
 		save_access_token(token)
 		print token.access_token + ' ' + str(token.expires_in) + ' ' + unixToDt(token.expires_in).strftime('%Y-%m-%d %H:%M:%S')
